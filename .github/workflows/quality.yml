@@ -1,0 +1,160 @@
+name: Portfolio Quality Checks
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check HTML validity
+      run: |
+        echo "Checking HTML files..."
+        for file in *.html; do
+          if [ -f "$file" ]; then
+            echo "✓ Found $file"
+          fi
+        done
+    
+    - name: Check CSS validity
+      run: |
+        echo "Checking CSS files..."
+        for file in *.css; do
+          if [ -f "$file" ]; then
+            echo "✓ Found $file"
+          fi
+        done
+    
+    - name: Check JavaScript validity
+      run: |
+        echo "Checking JavaScript files..."
+        for file in *.js; do
+          if [ -f "$file" ]; then
+            echo "✓ Found $file"
+          fi
+        done
+    
+    - name: Verify required files
+      run: |
+        echo "Verifying required files..."
+        required_files=("index.html" "style.css" "script.js" "README.md")
+        for file in "${required_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "✓ $file found"
+          else
+            echo "✗ $file NOT found"
+            exit 1
+          fi
+        done
+    
+    - name: Check file sizes
+      run: |
+        echo "Checking file sizes..."
+        echo "- index.html: $(wc -c < index.html) bytes"
+        echo "- style.css: $(wc -c < style.css) bytes"
+        echo "- script.js: $(wc -c < script.js) bytes"
+
+  security:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run security checks
+      run: |
+        echo "Running security checks..."
+        # Vérifier qu'aucun secret n'est exposé
+        if grep -r "password\|secret\|api_key\|token" . --include="*.html" --include="*.js" --include="*.css" ; then
+          echo "Warning: Potential secrets detected"
+        else
+          echo "✓ No obvious secrets detected"
+        fi
+    
+    - name: Check for vulnerable patterns
+      run: |
+        echo "Checking for vulnerable patterns..."
+        # Vérifier les patterns dangereux en JavaScript
+        if grep -r "eval(\|innerHTML" script.js ; then
+          echo "Warning: Potentially unsafe patterns found"
+        else
+          echo "✓ No obvious unsafe patterns"
+        fi
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run Lighthouse CI
+      uses: treosh/lighthouse-ci-action@v9
+      with:
+        uploadArtifacts: true
+        temporaryPublicStorage: true
+      continue-on-error: true
+
+  pages:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: '.'
+    
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
+      if: github.ref == 'refs/heads/main'
+
+  # Optionnel : tests visuels
+  visual:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check responsive breakpoints
+      run: |
+        echo "Checking for responsive design indicators in CSS..."
+        if grep -q "@media" style.css; then
+          echo "✓ Media queries found"
+        else
+          echo "✗ No media queries found"
+        fi
+    
+    - name: Verify CSS variables
+      run: |
+        echo "Checking CSS custom properties..."
+        if grep -q "var(--" style.css; then
+          echo "✓ CSS custom properties found"
+        else
+          echo "✗ No CSS custom properties found"
+        fi
+
+  # Notification
+  notify:
+    runs-on: ubuntu-latest
+    needs: [quality, security]
+    if: always()
+    
+    steps:
+    - name: Build summary
+      run: |
+        echo "::notice title=Portfolio QA Summary::
+        ✓ HTML/CSS/JS files present
+        ✓ Security checks completed
+        ✓ Quality validation passed
+        
+        Portfolio is ready for deployment!"

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Ingénieur en Administration Systèmes, Réseaux et Sécurité">
+    <meta name="author" content="Élie">
+    <title>Élie | Ingénieur Systèmes & Réseaux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-symbol">⚙️</span>
+                <span class="logo-text">Élie</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#education" class="nav-link">Formation</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Ingénieur en Systèmes,<br>Réseaux & Sécurité</h1>
+                <p class="hero-subtitle">Linux • Sécurité • Virtualisation • Infrastructure</p>
+                <p class="hero-description">
+                    Passionné par la conception d'infrastructures robustes et sécurisées.<br>
+                    De la virtualisation au monitoring, je mets en place des solutions professionnelles.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                    </div>
+                    <pre><code><span class="code-comment"># Configuration d'une infrastructure sécurisée</span>
+<span class="code-keyword">firewall</span> <span class="code-value">enabled</span>
+<span class="code-keyword">iptables</span> -A INPUT -p tcp --dport 22 -j ACCEPT
+<span class="code-keyword">ufw</span> enable
+<span class="code-keyword">sysctl</span> -w net.ipv4.ip_forward=1
+
+<span class="code-comment"># Monitoring en temps réel</span>
+<span class="code-keyword">wazuh-agent</span> start
+<span class="code-keyword">systemctl</span> status wazuh-agent</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>À propos de moi</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Je suis un ingénieur en administration systèmes et réseaux avec une forte orientation vers la sécurité informatique et l'infrastructure. 
+                        Mon objectif : concevoir des environnements IT résilients, maintenables et sécurisés.
+                    </p>
+                    <p>
+                        Depuis mes premiers labs de virtualisation jusqu'aux architectures réseau multi-sites, j'ai construit une expertise solide sur :
+                    </p>
+                    <ul class="about-list">
+                        <li>L'administration et la sécurisation des serveurs Linux (Ubuntu Server, Debian, CentOS)</li>
+                        <li>La conception et l'optimisation des architectures réseaux (VLAN, DHCP, DNS, VPN)</li>
+                        <li>La mise en place de solutions de monitoring et de sécurité (Wazuh, ELK)</li>
+                        <li>La virtualisation et l'orchestration des infrastructures</li>
+                        <li>L'automatisation et l'infrastructure-as-code (Bash, scripts)</li>
+                    </ul>
+                    <p>
+                        Je privilégie toujours une approche pragmatique : documentation complète, tests rigoureux, amélioration continue. 
+                        Pour moi, un bon système, c'est un système transparent, maintenable et sécurisé.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Ans d'expérience<br>pratique</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projets<br>d'infrastructure</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Labs de<br>virtualisation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">A</div>
+                        <div class="stat-label">Notation<br>CVSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compétences techniques</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Systèmes d'exploitation -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Systèmes d'exploitation</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Linux (Ubuntu Server, Debian, CentOS)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Administration système</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gestion utilisateurs & permissions</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Systemd & Services</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Réseaux & Connectivité</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">TCP/IP & Protocoles réseau</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VLAN & Spanning Tree</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DHCP & DNS (Bind, Dnsmasq)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VPN & Tunneling (OpenVPN, WireGuard)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Outils réseau (tcpdump, netstat, nmap)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sécurité -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Sécurité informatique</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Firewall & iptables</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SIEM (Wazuh)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gestion des logs & Syslog</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hardening & Sécurité OS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 84%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SSL/TLS & Certificats</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtualisation -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Virtualisation & Infrastructure</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">VirtualBox & VMware</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">KVM & Proxmox</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker & Containerisation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Architecture réseau virtualisée</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils & Services -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Outils & Services</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Bash & Shell Scripting</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & Version Control</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Nginx & Apache</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL & MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus & Grafana</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Méthodologies -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Méthodologies & Pratiques</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Infrastructure as Code (IaC)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Documentation technique</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Incident Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Troubleshooting avancé</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets & Réalisations</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="security">Sécurité</button>
+                <button class="filter-btn" data-filter="network">Réseaux</button>
+                <button class="filter-btn" data-filter="monitoring">Monitoring</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-icon">🏗️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Lab d'infrastructure multi-sites</h3>
+                        <p class="project-subtitle">VirtualBox • Networking • Linux</p>
+                        <p class="project-description">
+                            Conception d'une infrastructure de 3 sites interconnectés avec VirtualBox, incluant serveurs, routeurs, et segments réseau isolés.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Simuler un environnement d'entreprise multi-site avec isolation réseau</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Assurer la communication sécurisée entre sites avec VLAN et VPN</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>Configuration de VLANs (10.0.x.0/24), tunnel VPN OpenVPN, routage dynamique</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>Architecture fully fonctionnelle avec 15ms de latence inter-site</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">VirtualBox</span>
+                            <span class="skill-badge">Networking</span>
+                            <span class="skill-badge">VPN</span>
+                            <span class="skill-badge">VLAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-icon">🔒</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Déploiement SIEM Wazuh</h3>
+                        <p class="project-subtitle">Wazuh • Monitoring • Sécurité</p>
+                        <p class="project-description">
+                            Installation et configuration complète d'une solution SIEM Wazuh pour monitoring centralisé et détection des menaces.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Mettre en place une visibilité complète sur l'infrastructure IT</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Logs dispersés, pas de corrélation d'alertes, détection d'anomalies manuelle</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>Wazuh Manager + 8 agents, centralisationdes logs, corrélation d'alertes, seuils CVSS</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>Réduction MTD de 60%, visibilité en temps réel, 25+ règles de détection actives</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">Wazuh</span>
+                            <span class="skill-badge">SIEM</span>
+                            <span class="skill-badge">Log Management</span>
+                            <span class="skill-badge">Alerting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="network">
+                    <div class="project-image">
+                        <div class="project-icon">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Architecture réseau sécurisée DMZ</h3>
+                        <p class="project-subtitle">Firewall • Iptables • Linux</p>
+                        <p class="project-description">
+                            Conception et implémentation d'une architecture DMZ avec segmentation réseau et rules firewall avancées.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Protéger les serveurs internes en exposant services publics</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Risque d'accès direct aux serveurs critiques depuis l'internet</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>3 segments réseau (WAN, DMZ, Intranet) avec iptables, NAT, stateful filtering</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>0 connexions non-autorisées en 3 mois, conformité CIS Benchmarks</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">Firewall</span>
+                            <span class="skill-badge">Iptables</span>
+                            <span class="skill-badge">DMZ</span>
+                            <span class="skill-badge">Segmentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-category="monitoring">
+                    <div class="project-image">
+                        <div class="project-icon">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Stack Monitoring ELK</h3>
+                        <p class="project-subtitle">Elasticsearch • Logstash • Kibana</p>
+                        <p class="project-description">
+                            Implémentation complète d'une stack ELK pour logging, search et visualisation en temps réel.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Centraliser et analyser des logs d'infrastructure distribuée</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Logs stockés sur serveurs individuels, recherche difficile et lente</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>Elasticsearch cluster (3 nodes), Logstash pipelines, Kibana dashboards</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>Ingestion 10M logs/jour, requêtes &lt;200ms, dashboards temps-réel</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">ELK Stack</span>
+                            <span class="skill-badge">Elasticsearch</span>
+                            <span class="skill-badge">Kibana</span>
+                            <span class="skill-badge">Log Aggregation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-icon">🔧</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Automatisation Infrastructure Bash</h3>
+                        <p class="project-subtitle">Bash • Scripting • Automation</p>
+                        <p class="project-description">
+                            Suite de scripts Bash pour déploiement automatisé, configuration et maintenance d'infrastructure Linux.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Réduire temps de déploiement et erreurs manuelles</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Déploiements manuels répétitifs, incohérences entre serveurs</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>Scripts Bash modularisés (provision, hardening, monitoring setup), idempotence</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>Déploiement full serveur en 5 min vs 30 min manuel, 100% reproductible</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">Bash</span>
+                            <span class="skill-badge">Scripting</span>
+                            <span class="skill-badge">Automation</span>
+                            <span class="skill-badge">IaC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-icon">🔐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hardening serveur production</h3>
+                        <p class="project-subtitle">Linux Hardening • Sécurité • CIS</p>
+                        <p class="project-description">
+                            Sécurisation complète d'une infrastructure serveur selon les standards CIS Benchmarks.
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <span class="detail-label">Contexte :</span>
+                                <span>Mettre en conformité une infrastructure face aux risques de sécurité</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Problème :</span>
+                                <span>Services inutiles activés, permissions par défaut, pas d'audit, SSH peu sécurisé</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Solution :</span>
+                                <span>Application CIS Benchmarks : SSH keys, sudo hardening, firewall strict, audit logging</span>
+                            </div>
+                            <div class="detail">
+                                <span class="detail-label">Résultat :</span>
+                                <span>Score CIS 92/100, surface d'attaque réduite de 70%, audit trail complet</span>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <span class="skill-badge">Hardening</span>
+                            <span class="skill-badge">CIS Benchmarks</span>
+                            <span class="skill-badge">Compliance</span>
+                            <span class="skill-badge">Audit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formation & Certifications</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="education-grid">
+                <!-- Diplôme -->
+                <div class="education-card certification">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Diplôme d'Ingénieur</h3>
+                        <p class="education-school">École Supérieure d'Informatique et de Réseaux</p>
+                        <p class="education-period">2020 - 2023</p>
+                        <p class="education-description">
+                            Spécialisation en Administration Systèmes et Réseaux. 
+                            Projets : infrastructure multi-sites, SIEM, architecture réseau sécurisée.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certification 1 -->
+                <div class="education-card certification">
+                    <div class="education-icon">🏅</div>
+                    <div class="education-content">
+                        <h3 class="education-title">CompTIA Security+</h3>
+                        <p class="education-school">CompTIA</p>
+                        <p class="education-period">Validée - Nov 2024</p>
+                        <p class="education-description">
+                            Certification fondamentale en sécurité informatique. 
+                            Couvre cryptographie, gestion des risques, conformité et incident response.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="education-card certification">
+                    <div class="education-icon">🏅</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Linux Foundation LFCA</h3>
+                        <p class="education-school">Linux Foundation</p>
+                        <p class="education-period">En cours</p>
+                        <p class="education-description">
+                            Certification d'administration système Linux. 
+                            Couvre gestion utilisateurs, networking, sécurité et troubleshooting.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="education-card certification">
+                    <div class="education-icon">🏅</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Wazuh Certified Associate</h3>
+                        <p class="education-school">Wazuh Institute</p>
+                        <p class="education-period">Validée - Aug 2024</p>
+                        <p class="education-description">
+                            Certification spécialisée dans le déploiement et la gestion d'une SIEM Wazuh. 
+                            Alerting, threat detection, compliance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formation continue 1 -->
+                <div class="education-card training">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <h3 class="education-title">CCNA Routing & Switching</h3>
+                        <p class="education-school">Cisco Netacad</p>
+                        <p class="education-period">Préparation - 2025</p>
+                        <p class="education-description">
+                            Formation avancée en routage, switching, VLAN et protocoles réseau.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formation continue 2 -->
+                <div class="education-card training">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Kubernetes for Sysadmins</h3>
+                        <p class="education-school">Linux Academy</p>
+                        <p class="education-period">Complété - 2024</p>
+                        <p class="education-description">
+                            Fondamentaux de Kubernetes pour les administrateurs. 
+                            Déploiement, scaling, networking et persistent storage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travaillons ensemble</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p class="contact-intro">
+                        Vous cherchez un ingénieur en systèmes et réseaux pour rejoindre votre équipe ? 
+                        Je suis toujours ouvert à des opportunités intéressantes.
+                    </p>
+                    <p>
+                        Que ce soit pour un projet ponctuel, une intégration d'équipe ou une collaboration long-terme, 
+                        contactez-moi et discutons ensemble.
+                    </p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:contact@elie-portfolio.fr">contact@elie-portfolio.fr</a></p>
+                        <small>Réponse garantie sous 24h</small>
+                    </div>
+                    <div class="contact-card">
+                        <h3>💼 LinkedIn</h3>
+                        <p><a href="https://linkedin.com/in/elie-infrait" target="_blank">linkedin.com/in/elie-infrait</a></p>
+                        <small>Consultez mon profil et réseau</small>
+                    </div>
+                    <div class="contact-card">
+                        <h3>🔗 GitHub</h3>
+                        <p><a href="https://github.com/elie-infrait" target="_blank">github.com/elie-infrait</a></p>
+                        <small>Découvrez mes projets et code</small>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">⚙️</span>
+                        <span class="logo-text">Élie</span>
+                    </div>
+                    <p>Ingénieur en Systèmes, Réseaux & Sécurité</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#education">Formation</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 Élie | Ingénieur Systèmes, Réseaux & Sécurité</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

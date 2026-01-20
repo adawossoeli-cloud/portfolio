@@ -1,0 +1,86 @@
+# Portfolio d'Élie - Fichier .gitignore
+
+# ============ Environnement & IDE ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============ Dépendances (si utilisées) ============
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============ Build & Dist ============
+dist/
+build/
+*.min.js
+*.min.css
+
+# ============ Logs ============
+logs/
+*.log
+
+# ============ Systèmes d'exploitation ============
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# ============ Fichiers temporaires ============
+*.tmp
+*.temp
+*.bak
+
+# ============ Secrets & Config ============
+.env
+.env.local
+secrets.json
+config.local.json
+
+# ============ Certificats SSL ============
+*.pem
+*.key
+*.crt
+
+# ============ Archives ============
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# ============ OS X ============
+.AppleDouble
+.LSOverride
+.TemporaryItems
+
+# ============ Fichiers de cache ============
+.cache/
+.eslintcache
+
+# ============ Ressources de test ============
+coverage/
+.nyc_output/
+
+# ============ Fichiers compilés ============
+*.class
+*.jar
+*.exe
+*.o
+*.so
+*.dylib
+
+# ============ Images larges (optionnel) ============
+# Décommenter si vous versionnez les images localement
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg

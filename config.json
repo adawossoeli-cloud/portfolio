@@ -1,0 +1,293 @@
+{
+  "personal": {
+    "name": "Élie",
+    "title": "Ingénieur en Systèmes, Réseaux & Sécurité",
+    "subtitle": "Linux • Sécurité • Virtualisation • Infrastructure",
+    "description": "Passionné par la conception d'infrastructures robustes et sécurisées. De la virtualisation au monitoring, je mets en place des solutions professionnelles.",
+    "email": "contact@elie-portfolio.fr",
+    "phone": "+33 (0)6 XX XX XX XX",
+    "location": "France",
+    "website": "https://elie-portfolio.fr"
+  },
+  "social": {
+    "github": "https://github.com/elie-infrait",
+    "linkedin": "https://linkedin.com/in/elie-infrait",
+    "twitter": "https://twitter.com/elie_infrait"
+  },
+  "about": {
+    "intro": "Je suis un ingénieur en administration systèmes et réseaux avec une forte orientation vers la sécurité informatique et l'infrastructure.",
+    "description": "Depuis mes premiers labs de virtualisation jusqu'aux architectures réseau multi-sites, j'ai construit une expertise solide sur l'administration et la sécurisation des serveurs Linux, la conception et l'optimisation des architectures réseaux, la mise en place de solutions de monitoring et de sécurité, la virtualisation et l'orchestration des infrastructures.",
+    "approach": "Je privilégie toujours une approche pragmatique : documentation complète, tests rigoureux, amélioration continue. Pour moi, un bon système, c'est un système transparent, maintenable et sécurisé.",
+    "stats": [
+      {
+        "number": "7+",
+        "label": "Ans d'expérience\npratique"
+      },
+      {
+        "number": "20+",
+        "label": "Projets\nd'infrastructure"
+      },
+      {
+        "number": "15+",
+        "label": "Labs de\nvirtualisation"
+      },
+      {
+        "number": "A",
+        "label": "Notation\nCVSS"
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "title": "Systèmes d'exploitation",
+        "skills": [
+          {
+            "name": "Linux (Ubuntu Server, Debian, CentOS)",
+            "level": 95
+          },
+          {
+            "name": "Administration système",
+            "level": 90
+          },
+          {
+            "name": "Gestion utilisateurs & permissions",
+            "level": 85
+          },
+          {
+            "name": "Systemd & Services",
+            "level": 88
+          }
+        ]
+      },
+      {
+        "title": "Réseaux & Connectivité",
+        "skills": [
+          {
+            "name": "TCP/IP & Protocoles réseau",
+            "level": 92
+          },
+          {
+            "name": "VLAN & Spanning Tree",
+            "level": 85
+          },
+          {
+            "name": "DHCP & DNS (Bind, Dnsmasq)",
+            "level": 88
+          },
+          {
+            "name": "VPN & Tunneling (OpenVPN, WireGuard)",
+            "level": 82
+          },
+          {
+            "name": "Outils réseau (tcpdump, netstat, nmap)",
+            "level": 90
+          }
+        ]
+      },
+      {
+        "title": "Sécurité informatique",
+        "skills": [
+          {
+            "name": "Firewall & iptables",
+            "level": 90
+          },
+          {
+            "name": "SIEM (Wazuh)",
+            "level": 85
+          },
+          {
+            "name": "Gestion des logs & Syslog",
+            "level": 88
+          },
+          {
+            "name": "Hardening & Sécurité OS",
+            "level": 84
+          },
+          {
+            "name": "SSL/TLS & Certificats",
+            "level": 80
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Lab d'infrastructure multi-sites",
+      "category": "infrastructure",
+      "icon": "🏗️",
+      "subtitle": "VirtualBox • Networking • Linux",
+      "description": "Conception d'une infrastructure de 3 sites interconnectés avec VirtualBox, incluant serveurs, routeurs, et segments réseau isolés.",
+      "context": "Simuler un environnement d'entreprise multi-site avec isolation réseau",
+      "problem": "Assurer la communication sécurisée entre sites avec VLAN et VPN",
+      "solution": "Configuration de VLANs (10.0.x.0/24), tunnel VPN OpenVPN, routage dynamique",
+      "result": "Architecture fully fonctionnelle avec 15ms de latence inter-site",
+      "tags": ["VirtualBox", "Networking", "VPN", "VLAN"]
+    },
+    {
+      "id": 2,
+      "title": "Déploiement SIEM Wazuh",
+      "category": "security",
+      "icon": "🔒",
+      "subtitle": "Wazuh • Monitoring • Sécurité",
+      "description": "Installation et configuration complète d'une solution SIEM Wazuh pour monitoring centralisé et détection des menaces.",
+      "context": "Mettre en place une visibilité complète sur l'infrastructure IT",
+      "problem": "Logs dispersés, pas de corrélation d'alertes, détection d'anomalies manuelle",
+      "solution": "Wazuh Manager + 8 agents, centralisation des logs, corrélation d'alertes, seuils CVSS",
+      "result": "Réduction MTD de 60%, visibilité en temps réel, 25+ règles de détection actives",
+      "tags": ["Wazuh", "SIEM", "Log Management", "Alerting"]
+    },
+    {
+      "id": 3,
+      "title": "Architecture réseau sécurisée DMZ",
+      "category": "network",
+      "icon": "🌐",
+      "subtitle": "Firewall • Iptables • Linux",
+      "description": "Conception et implémentation d'une architecture DMZ avec segmentation réseau et rules firewall avancées.",
+      "context": "Protéger les serveurs internes en exposant services publics",
+      "problem": "Risque d'accès direct aux serveurs critiques depuis l'internet",
+      "solution": "3 segments réseau (WAN, DMZ, Intranet) avec iptables, NAT, stateful filtering",
+      "result": "0 connexions non-autorisées en 3 mois, conformité CIS Benchmarks",
+      "tags": ["Firewall", "Iptables", "DMZ", "Segmentation"]
+    },
+    {
+      "id": 4,
+      "title": "Stack Monitoring ELK",
+      "category": "monitoring",
+      "icon": "📊",
+      "subtitle": "Elasticsearch • Logstash • Kibana",
+      "description": "Implémentation complète d'une stack ELK pour logging, search et visualisation en temps réel.",
+      "context": "Centraliser et analyser des logs d'infrastructure distribuée",
+      "problem": "Logs stockés sur serveurs individuels, recherche difficile et lente",
+      "solution": "Elasticsearch cluster (3 nodes), Logstash pipelines, Kibana dashboards",
+      "result": "Ingestion 10M logs/jour, requêtes <200ms, dashboards temps-réel",
+      "tags": ["ELK Stack", "Elasticsearch", "Kibana", "Log Aggregation"]
+    },
+    {
+      "id": 5,
+      "title": "Automatisation Infrastructure Bash",
+      "category": "infrastructure",
+      "icon": "🔧",
+      "subtitle": "Bash • Scripting • Automation",
+      "description": "Suite de scripts Bash pour déploiement automatisé, configuration et maintenance d'infrastructure Linux.",
+      "context": "Réduire temps de déploiement et erreurs manuelles",
+      "problem": "Déploiements manuels répétitifs, incohérences entre serveurs",
+      "solution": "Scripts Bash modularisés (provision, hardening, monitoring setup), idempotence",
+      "result": "Déploiement full serveur en 5 min vs 30 min manuel, 100% reproductible",
+      "tags": ["Bash", "Scripting", "Automation", "IaC"]
+    },
+    {
+      "id": 6,
+      "title": "Hardening serveur production",
+      "category": "security",
+      "icon": "🔐",
+      "subtitle": "Linux Hardening • Sécurité • CIS",
+      "description": "Sécurisation complète d'une infrastructure serveur selon les standards CIS Benchmarks.",
+      "context": "Mettre en conformité une infrastructure face aux risques de sécurité",
+      "problem": "Services inutiles activés, permissions par défaut, pas d'audit, SSH peu sécurisé",
+      "solution": "Application CIS Benchmarks : SSH keys, sudo hardening, firewall strict, audit logging",
+      "result": "Score CIS 92/100, surface d'attaque réduite de 70%, audit trail complet",
+      "tags": ["Hardening", "CIS Benchmarks", "Compliance", "Audit"]
+    }
+  ],
+  "education": [
+    {
+      "type": "diploma",
+      "title": "Diplôme d'Ingénieur",
+      "institution": "École Supérieure d'Informatique et de Réseaux",
+      "date": "2020 - 2023",
+      "description": "Spécialisation en Administration Systèmes et Réseaux. Projets : infrastructure multi-sites, SIEM, architecture réseau sécurisée.",
+      "icon": "🎓"
+    },
+    {
+      "type": "certification",
+      "title": "CompTIA Security+",
+      "institution": "CompTIA",
+      "date": "Validée - Nov 2024",
+      "description": "Certification fondamentale en sécurité informatique. Couvre cryptographie, gestion des risques, conformité et incident response.",
+      "icon": "🏅"
+    },
+    {
+      "type": "certification",
+      "title": "Linux Foundation LFCA",
+      "institution": "Linux Foundation",
+      "date": "En cours",
+      "description": "Certification d'administration système Linux. Couvre gestion utilisateurs, networking, sécurité et troubleshooting.",
+      "icon": "🏅"
+    },
+    {
+      "type": "certification",
+      "title": "Wazuh Certified Associate",
+      "institution": "Wazuh Institute",
+      "date": "Validée - Aug 2024",
+      "description": "Certification spécialisée dans le déploiement et la gestion d'une SIEM Wazuh. Alerting, threat detection, compliance.",
+      "icon": "🏅"
+    },
+    {
+      "type": "training",
+      "title": "CCNA Routing & Switching",
+      "institution": "Cisco Netacad",
+      "date": "Préparation - 2025",
+      "description": "Formation avancée en routage, switching, VLAN et protocoles réseau.",
+      "icon": "📚"
+    },
+    {
+      "type": "training",
+      "title": "Kubernetes for Sysadmins",
+      "institution": "Linux Academy",
+      "date": "Complété - 2024",
+      "description": "Fondamentaux de Kubernetes pour les administrateurs. Déploiement, scaling, networking et persistent storage.",
+      "icon": "📚"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Ingénieur Systèmes & Réseaux",
+      "company": "TechCorp Solutions",
+      "period": "2023 - Present",
+      "description": "Architecture et maintenance d'infrastructure IT multi-sites, implémentation de SIEM Wazuh, hardening sécurité."
+    },
+    {
+      "position": "Administrateur Systèmes (Stage)",
+      "company": "InfraSecure",
+      "period": "2022 - 2023",
+      "description": "Support infrastructure, gestion serveurs Linux, monitoring et alerting, documentation technique."
+    },
+    {
+      "position": "Technicien Infrastructure",
+      "company": "NetWorks Inc.",
+      "period": "2021 - 2022",
+      "description": "Virtualisation, configuration réseau, support utilisateurs, déploiement de services."
+    }
+  ],
+  "contact": {
+    "methods": [
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "contact@elie-portfolio.fr",
+        "note": "Réponse garantie sous 24h"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/elie-infrait",
+        "note": "Consultez mon profil et réseau"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "github.com/elie-infrait",
+        "note": "Découvrez mes projets et code"
+      }
+    ]
+  },
+  "metadata": {
+    "lastUpdated": "2026-01-20",
+    "version": "1.0.0",
+    "language": "fr",
+    "theme": "light"
+  }
+}

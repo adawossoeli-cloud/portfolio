@@ -1,0 +1,57 @@
+# Configuration Netlify pour le portfolio
+# Ce fichier permet un déploiement facile sur Netlify
+
+[build]
+  # Pas besoin de build (HTML/CSS/JS vanilla)
+  command = "echo 'No build command needed'"
+  publish = "/"
+
+[dev]
+  # Configuration pour développement local
+  command = "python3 -m http.server 8000"
+  port = 8000
+  publish = "/"
+
+# Redirections
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de sécurité
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache headers pour les assets
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML (cache court pour les mises à jour)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# Compression
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "gzip, deflate, br"

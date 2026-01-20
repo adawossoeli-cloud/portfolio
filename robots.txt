@@ -1,0 +1,58 @@
+# Robots.txt pour le portfolio d'Élie
+# Fichier d'instruction pour les crawlers des moteurs de recherche
+
+# Permettre tous les crawlers
+User-agent: *
+Allow: /
+Disallow: /.git
+Disallow: /.github
+Disallow: /node_modules
+Disallow: /*.json
+Disallow: /*.md
+
+# Lenteur de crawling
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://elie-portfolio.fr/sitemap.xml
+
+---
+
+# Règles spécifiques par crawler
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+---
+
+# Bloquer les mauvais crawlers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
