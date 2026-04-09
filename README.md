@@ -123,9 +123,9 @@ Ingénieur en administration systèmes, réseaux et sécurité informatique. Je 
 
 | Certification | Organisme | Statut | Date |
 |---|---|---|---|
-| **Diplôme d'Ingénieur** | École Supérieure d'Informatique | ✅ | 2023 |
-| **Security+** | CompTIA | ✅ | Nov 2024 |
-| **Wazuh Certified Associate** | Wazuh Institute | ✅ | Aug 2024 |
+| **Diplôme d'Ingénieur** | École Supérieure d'Informatique | 📚 En cours | 2026 |
+
+
 | **LFCA** | Linux Foundation | 📚 En cours | 2025 |
 | **CCNA R&S** | Cisco | 📚 Préparation | 2025 |
 
@@ -133,11 +133,11 @@ Ingénieur en administration systèmes, réseaux et sécurité informatique. Je 
 
 ## 📊 Statistiques
 
-- **7+** ans d'expérience pratique
+- **-** ans d'expérience pratique
 - **20+** projets d'infrastructure
 - **15+** labs de virtualisation
-- **5+** certifications IT
-- **100+** heures de formation continue/an
+- **3** certifications IT
+- **-** heures de formation continue/an
 
 ---
 
