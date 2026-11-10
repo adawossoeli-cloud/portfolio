@@ -2,7 +2,7 @@
 
 **Administrateur des systèmes et réseaux** · Lomé, Togo
 
-[Portfolio en ligne](https://adawossoeli-cloud.github.io/portfolio/) · [LinkedIn](https://linkedin.com/in/elie-adawosso-399505284) · [GitHub](https://github.com/adawossoeli-cloud/portfolio)
+Site : [GitHub Pages](https://adawossoeli-cloud.github.io/portfolio/) (déploiement automatique via GitHub Actions) · [LinkedIn](https://linkedin.com/in/elie-adawosso-399505284) · [GitHub](https://github.com/adawossoeli-cloud/portfolio)
 
 ## Profil
 
