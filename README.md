@@ -1,265 +1,82 @@
-# Élie - Ingénieur en Systèmes, Réseaux & Sécurité
+# ADAWOSSO EDOH MAWUYRAM ELIE
 
-![Portfolio Badge](https://img.shields.io/badge/Portfolio-Systèmes%20%26%20Réseaux-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Active-success)
-
-## 🎯 À propos
+**Administrateur des systèmes et réseaux** · Lomé, Togo
 
-Ingénieur en administration systèmes, réseaux et sécurité informatique. Je conçois et implémente des infrastructures IT robustes, sécurisées et maintenables.
+[Portfolio en ligne](https://portfolio-one-inky-wcqjwq9cyb.vercel.app) · [LinkedIn](https://linkedin.com/in/elie-adawosso-399505284) · [GitHub](https://github.com/adawossoeli-cloud/portfolio)
 
-**Spécialisations :**
-- 🖥️ Administration Linux (Ubuntu Server, Debian, CentOS)
-- 🌐 Architecture réseau (VLAN, DHCP, DNS, VPN)
-- 🔒 Sécurité informatique (Firewall, SIEM, Hardening)
-- ⚙️ Virtualisation (VirtualBox, VMware, KVM)
-- 📊 Monitoring et observabilité (Wazuh, ELK, Prometheus)
-- 🤖 Automatisation et Infrastructure as Code
+## Profil
 
----
+Ingénieur des travaux informatiques spécialisé en administration systèmes et réseaux. Expérience académique et terrain en exploitation, supervision, automatisation et sécurité des infrastructures IT.
 
-## 💼 Compétences techniques
+## Expérience
 
-### Systèmes d'exploitation
-- **Linux** : Ubuntu Server, Debian, CentOS
-- Administration système, gestion utilisateurs, permissions
-- Systemd, services, scheduling (cron, at)
-- Kernel tuning, performance optimization
+### Stagiaire Administrateur Systèmes & Réseaux — Service Exploitation
+**Café Informatique & Télécommunications** · Lomé · Novembre 2026 — Aujourd'hui
 
-### Réseaux & Connectivité
-- **Protocoles** : TCP/IP, VLAN, DHCP, DNS, ICMP, ARP
-- **VPN** : OpenVPN, WireGuard, IPsec
-- **Outils** : tcpdump, netstat, nmap, wireshark, iptables
-- Routage dynamique, spanning tree, subnetting
+- Supervision du backbone et des nœuds du réseau C@fenet, suivi de la charge et de la disponibilité.
+- Surveillance des serveurs et équipements, consultation des journaux, dépannage de premier niveau et escalade.
+- Assistance client par hotline et courriel, gestion de la salle serveur et maintenance du réseau interne.
+- Rédaction de rapports d'incident.
 
-### Sécurité informatique
-- **Firewall** : iptables, ufw, pf
-- **SIEM** : Wazuh (agent et manager)
-- **Log Management** : Syslog, rsyslog, ELK Stack
-- **Hardening** : CIS Benchmarks, SSH security, sudo policies
-- **Compliance** : Audit logging, incident response
+### Stagiaire Administrateur Système & Réseaux
+**Compagnie Énergie Électrique (CEET)** · Lomé · Mai — Juillet 2026
 
-### Virtualisation & Infrastructure
-- **Hyperviseurs** : VirtualBox, VMware ESXi, KVM, Proxmox
-- Infrastructure as Code concepts
-- Architecture réseau virtualisée
-- Docker basics, containerization concepts
+- Étude et déploiement d'un SIEM Wazuh (Manager, Indexer, Dashboard) sur Ubuntu Server 22.04 LTS.
+- Configuration d'agents Linux et Windows, de l'Active Response et de règles de détection brute-force.
+- Intégration de VirusTotal, surveillance d'intégrité des fichiers, détection de vulnérabilités et de rootkits.
+- Configuration d'alertes automatisées pour le mémoire de fin de formation consacré à la supervision et à la détection des incidents de sécurité.
 
-### Outils & Services
-- **Scripting** : Bash, Shell, Python basics
-- **Web Servers** : Nginx, Apache
-- **Databases** : PostgreSQL, MySQL
-- **Version Control** : Git, GitHub
-- **Monitoring** : Prometheus, Grafana, Wazuh
+### Stagiaire Administrateur Systèmes & Réseaux
+**Complexe Général de Télécommunication (CGT)** · Lomé · Juin — Septembre 2025
 
----
+- Interconnexion de routeurs Cisco et Huawei, mise en service et validation multiconstructeurs.
+- Tests de connectivité, supervision de caméras de vidéosurveillance et support technique de premier niveau.
 
-## 🚀 Projets principaux
+## Projets académiques
 
-### 1. Lab d'Infrastructure Multi-sites
-**Contexte** : Simuler un environnement d'entreprise avec plusieurs sites
-- VirtualBox, 3 sites interconnectés
-- VLAN, DHCP, DNS centralisé
-- VPN OpenVPN entre les sites
-- **Résultat** : Architecture entièrement fonctionnelle, latence inter-site < 15ms
+- Conception et déploiement d'architectures réseau pédagogiques avec DHCP, DNS et VLAN.
+- Durcissement de serveurs Linux avec Ansible et mise en place de sauvegardes planifiées.
+- Supervision d'infrastructures avec Zabbix et déploiement d'une solution SIEM Wazuh.
+- Analyse et tests contrôlés de la sécurité Wi-Fi WPA2.
 
-**Compétences** : VirtualBox • Networking • VPN • VLAN
+## Compétences
 
----
+- **Systèmes :** Linux (Ubuntu Server 22.04, Debian, Kali), Windows Server 2019, Windows 11 Pro, systemd, gestion des droits, durcissement, VMware, VirtualBox.
+- **Réseaux :** TCP/IP, VLAN, DHCP, DNS, NAT, routage, commutation, Cisco IOS, Huawei VRP, interconnexion multiconstructeurs, WPA2.
+- **Supervision :** Zabbix, analyse de journaux, suivi de disponibilité et de performance, qualification et rapports d'incident.
+- **Sécurité :** Wazuh, HIDS, FIM, Suricata (NIDS), règles de détection, réponse active iptables/netsh, VirusTotal, détection de vulnérabilités et de rootkits.
+- **Automatisation :** Ansible, Bash, cron, Docker, sauvegardes automatisées.
 
-### 2. Déploiement SIEM Wazuh
-**Contexte** : Mettre en place une visibilité complète sur l'infrastructure IT
-- Wazuh Manager + 8 agents
-- Centralisation des logs syslog
-- Corrélation d'alertes, seuils CVSS
-- **Résultat** : Réduction MTTR 60%, détection temps réel, 25+ règles actives
+## Formation
 
-**Compétences** : Wazuh • SIEM • Log Management • Security Monitoring
+- **Ingénieur des travaux informatiques**, Institut Africain d'Informatique (IAI — Togo) · Novembre 2023 — Août 2026.
+- **Baccalauréat Série C**, Lycée Agoè Centre · Septembre 2022 — Juin 2023.
+- **Formation en anglais — préparation TOEIC**, Global Exam / Formation en ligne · Janvier 2024 — Janvier 2026.
 
----
+## Certifications
 
-### 3. Architecture Réseau DMZ Sécurisée
-**Contexte** : Protéger les serveurs internes en exposant services publics
-- 3 segments réseau (WAN, DMZ, Intranet)
-- Firewall iptables, NAT, stateful filtering
-- Compliance CIS Benchmarks
-- **Résultat** : 0 accès non-autorisés en 3 mois, score CIS 92/100
+- CCNA 1 — Introduction to Networks (2024)
+- CCNA 2 — Switching, Routing and Wireless Essentials (2025)
+- CCNA 3 — Enterprise Networking, Security and Automation (2026)
+- Ethical Hacker (2026)
+- IT Essentials 7 — Transformation Digitale (2026)
+- Introduction to Modern AI (2026)
+- Introduction to Cyber Security (2026)
 
-**Compétences** : Firewall • Iptables • DMZ • Segmentation
+Toutes les certifications sont délivrées par Cisco Networking Academy.
 
----
+## Outils & langues
 
-### 4. Stack Monitoring ELK
-**Contexte** : Centraliser et analyser les logs d'infrastructure distribuée
-- Elasticsearch cluster (3 nodes)
-- Logstash pipelines, Kibana dashboards
-- **Résultat** : Ingestion 10M logs/jour, requêtes < 200ms
+VS Code, Git, Linux CLI, Zabbix, Wazuh, Ansible, GNS3, Wireshark, Nessus, Huawei eNSP, Cisco Packet Tracer et VMware.
 
-**Compétences** : ELK Stack • Elasticsearch • Kibana • Log Aggregation
+**Français :** courant · **Anglais :** intermédiaire
 
----
+## Intérêts
 
-### 5. Automatisation Infrastructure Bash
-**Contexte** : Réduire temps de déploiement et erreurs manuelles
-- Suite de scripts Bash modulaires
-- Déploiement, hardening, setup monitoring
-- **Résultat** : Déploiement full serveur en 5 min vs 30 min manuel
+Capture The Flag (TryHackMe, Hack The Box, Root-Me), cryptographie et OSINT.
 
-**Compétences** : Bash • Scripting • Automation • IaC
+## Contact
 
----
-
-### 6. Hardening Serveur Production
-**Contexte** : Sécurisation complète selon standards CIS
-- SSH keys, sudo hardening
-- Firewall strict, audit logging
-- **Résultat** : Score CIS 92/100, surface d'attaque -70%
-
-**Compétences** : Hardening • CIS Benchmarks • Compliance • Audit
-
----
-
-## 🎓 Formation & Certifications
-
-| Certification | Organisme | Statut | Date |
-|---|---|---|---|
-| **Diplôme d'Ingénieur** | École Supérieure d'Informatique | 📚 En cours | 2026 |
-
-
-| **LFCA** | Linux Foundation | 📚 En cours | 2025 |
-| **CCNA R&S** | Cisco | 📚 Préparation | 2025 |
-
----
-
-## 📊 Statistiques
-
-- **-** ans d'expérience pratique
-- **20+** projets d'infrastructure
-- **15+** labs de virtualisation
-- **3** certifications IT
-- **-** heures de formation continue/an
-
----
-
-## 📁 Structure du Portfolio
-
-```
-Portfolio/
-├── index.html          # Page principale
-├── style.css           # Styles CSS (responsive)
-├── script.js           # Interactivité JavaScript
-├── README.md           # Ce fichier
-└── assets/             # Images, icônes (si besoin)
-```
-
----
-
-## 🌐 Accès au Portfolio
-
-- **Site web** : Ouvrir `index.html` dans un navigateur
-- **GitHub** : [github.com/elie-infrait](https://github.com/elie-infrait)
-- **LinkedIn** : [linkedin.com/in/elie-infrait](https://linkedin.com/in/elie-infrait)
-
----
-
-## 💡 Caractéristiques du Site
-
-### 🎨 Design
-- ✅ Design moderne et professionnel
-- ✅ Navigation intuitive et responsive
-- ✅ Animations fluides
-- ✅ Dark mode optionnel (prêt à implémenter)
-
-### 📱 Responsive
-- ✅ Mobile-first approach
-- ✅ Optimisé pour tablettes et desktop
-- ✅ Navigation hamburger mobile
-- ✅ Imprimable (PDF)
-
-### ⚡ Performance
-- ✅ Optimisé pour les performances
-- ✅ Smooth scrolling
-- ✅ Lazy loading (images)
-- ✅ Lightweight (HTML/CSS/JS vanilla)
-
-### ♿ Accessibilité
-- ✅ Sémantique HTML5
-- ✅ WCAG compliant
-- ✅ Navigation au clavier
-- ✅ Contraste de couleurs
-
----
-
-## 🔧 Installation & Utilisation
-
-### Prérequis
-- Navigateur web moderne (Chrome, Firefox, Safari, Edge)
-- Aucune dépendance externe
-
-### Installation
-```bash
-# Cloner ou télécharger le repository
-git clone https://github.com/elie-infrait/portfolio.git
-cd portfolio
-
-# Ouvrir simplement dans le navigateur
-# Linux/Mac
-open index.html
-
-# Windows
-start index.html
-```
-
-### Éditer le contenu
-Modifiez directement :
-- **index.html** : Contenu et structure
-- **style.css** : Couleurs, fonts, layouts
-- **script.js** : Interactivité
-
----
-
-## 📧 Contact & Collaboration
-
-Je suis toujours intéressé par :
-- 🚀 Projets intéressants en infrastructure
-- 🤝 Collaborations avec d'autres ingénieurs
-- 📚 Opportunités d'apprentissage
-- 💼 Offres d'emploi ou stage
-
-**Email** : contact@elie-portfolio.fr
-**LinkedIn** : [linkedin.com/in/elie-infrait](https://linkedin.com/in/elie-infrait)
-**GitHub** : [github.com/elie-infrait](https://github.com/elie-infrait)
-
----
-
-## 📄 Licence
-
-Ce portfolio est sous licence MIT. Libre d'utilisation et modification.
-
-```
-MIT License - Voir le fichier LICENSE pour détails
-```
-
----
-
-## 🎯 Prochaines améliorations
-
-- [ ] Ajouter un dark mode complet
-- [ ] Intégrer un système de blog (articles tech)
-- [ ] Ajouter des certifications en temps réel
-- [ ] Implémentation d'un analytics personnalisé
-- [ ] Version PDF téléchargeable
-- [ ] Integration avec un CMS headless
-
----
-
-## 👋 Merci
-
-Merci d'avoir visité mon portfolio ! N'hésitez pas à me contacter pour toute opportunité intéressante.
-
-**« L'infrastructure robuste d'aujourd'hui est la fondation du succès de demain. »**
-
----
-
-*Dernière mise à jour : 20 janvier 2026*
-# portfolio
+- **Email :** [adawossoeli@gmail.com](mailto:adawossoeli@gmail.com)
+- **Téléphone :** [+228 91 34 96 97](tel:+22891349697)
+- **Localisation :** Lomé, Togo
